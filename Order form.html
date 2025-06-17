@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#855b5b;
+}
+
+.container {
+		width: 80%;
+        max-width: 400px;
+        margin: 25px auto;
+        background-color:#646161;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 93%), inset 3px 4px 8px 0px rgb(112 112 112 / 93%);
+}
+
+h2 {
+  text-align: center;
+  font-family:Cooper Black;
+}
+
+.form-group {
+  margin-bottom: 7px;
+  padding:10px;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+Select,
+textarea {
+  width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    border-radius: 7PX;
+    box-shadow:4px 8px 8px 1px rgb(46 42 42);;
+    box-sizing: border-box;
+}
+
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color:#7e7e7e;
+}
+
+
+
+button:focus {
+  outline: none;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>ORDER DETAILS</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="FULL NAME" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="**********" required>
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+          <option value="" disabled selected>Select your state</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Ladakh">Ladakh</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="West Bengal">West Bengal</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="1" placeholder="Enter your address"required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="order">Order:</label>
+        <textarea id="order" name="order" rows="1" placeholder="Food name" required></textarea>
+      </div>
+      <button type="submit">Order</button>
+    </form>
+  </div>
+</body>
+</html>
